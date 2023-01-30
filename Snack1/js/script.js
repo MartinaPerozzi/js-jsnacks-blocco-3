@@ -10,6 +10,8 @@ submitButton.addEventListener(
         const maxValue = parseInt(document.querySelector(".max-number").value);
         console.log("max" + maxValue)
 
+        // Generare un numero nel range min/max
+
         const betweenNumber = Math.floor(Math.random() * (maxValue - minValue) + minValue);
         // Controlla che i valori inseriti siano accettati 
 
@@ -20,7 +22,7 @@ submitButton.addEventListener(
 
         } else {
 
-            // Problema con la generazione del numero randomico
+            // Rendere noto all'utente il numero generato
 
             document.querySelector(".mess").innerHTML = `Numero generato tra ${minValue}  e  ${maxValue} = ${betweenNumber}`;
             console.log(betweenNumber)
