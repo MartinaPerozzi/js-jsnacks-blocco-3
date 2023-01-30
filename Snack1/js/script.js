@@ -5,11 +5,12 @@ const submitButton = document.querySelector(".submit-button");
 submitButton.addEventListener(
     "click",
     function () {
-        const minValue = document.querySelector(".min-number").value;
+        const minValue = parseInt(document.querySelector(".min-number").value);
         console.log("min" + minValue)
-        const maxValue = document.querySelector(".max-number").value;
+        const maxValue = parseInt(document.querySelector(".max-number").value);
         console.log("max" + maxValue)
 
+        const betweenNumber = Math.floor(Math.random() * (maxValue - minValue) + minValue);
         // Controlla che i valori inseriti siano accettati 
 
         if ((maxValue <= minValue) || (maxValue <= 0 || minValue <= 0)) {
@@ -20,8 +21,6 @@ submitButton.addEventListener(
         } else {
 
             // Problema con la generazione del numero randomico
-
-            const betweenNumber = Math.floor(Math.random() * (maxValue - minValue) + minValue);
 
             document.querySelector(".mess").innerHTML = `Numero generato tra ${minValue}  e  ${maxValue} = ${betweenNumber}`;
             console.log(betweenNumber)
