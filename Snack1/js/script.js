@@ -10,10 +10,14 @@ submitButton.addEventListener(
         const maxValue = document.querySelector(".max-number").value;
         console.log("max" + maxValue)
 
-        if ((maxValue <= minValue) && (maxValue <= 0 || minValue <= 0)) {
+        // Controlla che i valori inseriti siano accettati 
+
+        if ((maxValue <= minValue) || (maxValue <= 0 || minValue <= 0)) {
             document.querySelector(".mess").innerHTML = "Inserisci i dati correttamente."
 
-        } if (minValue < maxValue) {
+            // Se i dati sono giusti. 
+
+        } else {
 
             // Problema con la generazione del numero randomico
 
