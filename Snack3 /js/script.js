@@ -29,14 +29,16 @@ submitButton.addEventListener(
                 // Da pushare nelle array
                 newArray.push(arrayNumbers);
                 console.log(arrayNumbers)
+                // Messaggio per utente
+                document.querySelector(".mess").innerHTML = `Ho creato ${uservalueN} Array con ${arrayElements} numeri randomici da 1 a 100! Ecco:`;
+
+                document.querySelector(".mess").innerHTML += ` [${newArray}] `;
                 // Incremento
                 i++;
             }
+
             // incremento
             N++;
-            // Messaggio- non riesco a mostrare ogni array
-            document.querySelector(".mess").innerHTML = `Ho creato ${uservalueN} Array con ${arrayElements} numeri randomici da 1 a 100! Ecco:`;
-            document.querySelector(".mess").innerHTML += ` [${newArray}] `;
         }
     }
 
