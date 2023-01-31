@@ -12,7 +12,7 @@ submitButton.addEventListener(
 
         // Poi creo N che parte da 1;
         let N = 1;
-        // Finchè N sarà minore o uguale nel valore inserito dall'utente
+        // Finchè N sarà minore o uguale al valore inserito dall'utente
         while (N <= uservalueN) {
 
             // Creare un array
