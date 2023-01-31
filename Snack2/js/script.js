@@ -1,6 +1,4 @@
 // Preparare gli elementi necessari //
-// const submitButton = document.querySelector(".submit-button");
-
 let numberArray = [];
 
 document.querySelector(".mess").innerHTML = "Inserisci un numero";
